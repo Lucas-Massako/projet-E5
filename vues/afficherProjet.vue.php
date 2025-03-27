@@ -34,7 +34,7 @@ if (!empty($data['items'])) {
         <p>Description : <?= $projet->getDescription(); ?></p>
     
         <a href="<?= $youtubeUrl ?>" target="_blank">
-            <button class="btn btn-danger">Voir la bande-annonce 🎬</button>
+            <button class="btn btn-danger">Voir la bande-annonce 🎬🎵</button>
         </a>
 </div>
 
