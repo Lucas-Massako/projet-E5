@@ -2,11 +2,11 @@
 ob_start();
 // Récupération des données du projet
 $titre = $projet->getTitre();
-$nom = $projet->getArtiste();  
+$artiste = $projet->getArtiste();  
 
 // API YouTube pour récupérer la bande-annonce
 $apiKey = "AIzaSyAPeHK4B7x7jtkazWVrFB9LIoCkE7Q8N98"; // Remplace par ta clé API YouTube
-$searchQuery = urlencode($titre . " trailer");
+$searchQuery = urlencode($titre .$artiste. " trailer");
 $url = "https://www.googleapis.com/youtube/v3/search?part=snippet&q=$searchQuery&type=video&key=$apiKey";
 
 // Appel de l'API
