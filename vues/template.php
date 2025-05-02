@@ -20,6 +20,9 @@
             <li class="nav-item">
                 <a class="nav-link active" href="<?= URL ?>projets">Mes Notes </a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="<?= URL ?>recommandation">recommandation </a>
+            </li>
         </ul>
     </div>
 </nav>

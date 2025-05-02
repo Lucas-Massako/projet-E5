@@ -9,6 +9,9 @@ define("URL", str_replace(
 
 require_once "controllers/projetController.controller.php";
 $projetController = new ProjetController;
+require_once "controllers/recommendationController.controller.php";
+$recoController = new RecommandationController();
+
 
 try {
     if (empty($_GET['page'])) {
@@ -42,6 +45,12 @@ try {
                     throw new Exception("La page n'existe pas !");
                 }
                 break;
+                case "recommandation":
+                    $recoController->afficherRecommandations(); 
+                    break;
+                
+                
+                
 
             default:
                 throw new Exception("La page n'existe pas !");
