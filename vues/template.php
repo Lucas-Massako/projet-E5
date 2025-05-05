@@ -21,7 +21,7 @@
                 <a class="nav-link active" href="<?= URL ?>projets">Mes Notes </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="<?= URL ?>recommandation">recommandation </a>
+                <a class="nav-link active" href="<?= URL ?>recommandation">Vos Recommandations </a>
             </li>
         </ul>
     </div>

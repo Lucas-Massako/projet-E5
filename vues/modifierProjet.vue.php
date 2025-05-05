@@ -29,6 +29,7 @@ ob_start() ?>
    
    
    
+    <input type="hidden" name="id" value="<?= $projet->getId(); ?>">
 
     <button type="submit" class="btn btn-primary">Valider</button>
 </form>

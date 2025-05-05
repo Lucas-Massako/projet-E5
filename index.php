@@ -37,7 +37,7 @@ try {
                 } else if ($url[1] === "m") {
                     $projetController->modificationProjet($url[2]);
                 } else if ($url[1] === "mvf") {
-                    $projetController->modificationProjetValidation($url[2]);
+                    $projetController->modificationProjetValidation();
                 } else if ($url[1] === "s") {
                     echo "L'ID du projet à supprimer est " . $url[2];
                     $projetController->suppressionProjet($url[2]);
@@ -46,11 +46,20 @@ try {
                 }
                 break;
                 case "recommandation":
-                    $recoController->afficherRecommandations(); 
-                    break;
+                //    $recoController->afficherRecommandations(); 
+                  //  break;
                 
+                  if (empty($url[1])) {
+                    $recoController->afficherRecommandations();
+                } else if ($url[1] === "p") {
+                    echo $recoController->afficherRecommandations($url[2]);
+                } else if ($url[1] === "a") {
+                    $recoController->ajouterRecommandation();
+                } else if ($url[1] === "avf") {
+                    $recoController->ajoutRecommandationValidation();
+                }
                 
-                
+                break;
 
             default:
                 throw new Exception("La page n'existe pas !");

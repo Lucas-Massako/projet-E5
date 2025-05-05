@@ -48,7 +48,8 @@ ob_start();
                 <td class="align-middle">
                     <form method="POST" action="<?= URL ?>recommandation/s/<?= $recom->getId(); ?>"
                           onsubmit="return confirm('Voulez-vous vraiment supprimer cette recommandation ?');">
-                        <button class="btn btn-danger" type="submit">Supprimer</button>
+                        <button class="btn btn-danger" type="submit">Supprimer</button> 
+                        
                     </form>
                 </td>
             </tr>
@@ -60,6 +61,6 @@ ob_start();
 
 <?php
 $contenu = ob_get_clean();
-$titre = "Mes recommandations";
+$titre = "Vos recommandations";
 require "template.php";
 ?>

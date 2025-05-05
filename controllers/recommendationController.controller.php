@@ -15,7 +15,7 @@ class RecommandationController {
     }
 
     public function ajouterRecommandation() {
-        require "vues/ajoutRecommandation.vue.php";
+        require "vues/ajoutRecommandation.php";
     }
 
     public function ajoutRecommandationValidation() {
